@@ -22,5 +22,16 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "translator-node-app": {
+      "tags": []
+    },
+    "translator-angular-app": {
+      "tags": []
+    },
+    "translator-angular-app-e2e": {
+      "tags": [],
+      "implicitDependencies": ["translator-angular-app"]
+    }
+  }
 }
