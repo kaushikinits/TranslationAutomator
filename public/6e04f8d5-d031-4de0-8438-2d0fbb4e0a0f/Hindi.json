@@ -1,0 +1,19 @@
+{
+    "welcome": "नमस्ते दुनिया",
+    "another": [
+        "दोनों दुनिया के सर्वश्रेष्ठ"
+    ],
+    "nextAnother": {
+        "info": "एक त्वरित लोमड़ी दीवार कूदता है",
+        "another": [
+            "दोनों दुनिया के सर्वश्रेष्ठ"
+        ],
+        "child": {
+            "welcome": "नमस्ते दुनिया",
+            "nextChild": {
+                "welcomenext": "Happy go lucky__NO_MATCH_FOUND__"
+            }
+        }
+    },
+    "next": "ख़ुशकिस्मत जाओ"
+}

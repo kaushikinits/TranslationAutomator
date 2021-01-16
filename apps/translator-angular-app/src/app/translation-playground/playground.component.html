@@ -1,0 +1,81 @@
+<div class="p-grid p-formgrid p-mt-4">
+  <div class="p-col-10 p-shadow-1 p-offset-1 section">
+    <div class="p-m-2 p-p-2">
+      <p-badge [value]="1"></p-badge>&nbsp;
+      <label class="p-field">Choose language of Json template uploaded:</label>
+      &nbsp;
+      <select id="sourceLanguage" [(ngModel)]="FromLanguage">
+        <option *ngFor="let srcLang of supportedLanguages" [value]="srcLang">
+          {{ srcLang }}
+        </option>
+      </select>
+    </div>
+    <div class="p-m-2 p-p-2">
+      <div class="info">
+        <i class="pi pi-info-circle"
+          ><label>&nbsp;Helpful Information</label></i
+        >
+      </div>
+      <p>
+        <b>Uploaded Json Template Language:</b> Please choose the language of
+        the json template uploaded in the previous screen.
+      </p>
+    </div>
+    <div class="p-m-2 p-p-2">
+      <p-badge [value]="2"></p-badge>&nbsp;
+      <label class="p-field">Choose language of output Json:</label>
+      &nbsp;
+      <select id="destinationLanguage" [(ngModel)]="ToLanguage">
+        <option *ngFor="let toLang of supportedLanguages" [value]="toLang">
+          {{ toLang }}
+        </option>
+      </select>
+    </div>
+    <div class="p-m-2 p-p-2">
+      <div class="info">
+        <i class="pi pi-info-circle"
+          ><label>&nbsp;Helpful Information</label></i
+        >
+      </div>
+      <p>
+        <b>Downloaded Json Template Language:</b> Please choose the language of
+        the json template you need to be converted in and downloaded. Any key
+        value that in not matched and not been able to be translated would
+        retain the original text with a stamp '__NO_MATCH_FOUND__'.
+      </p>
+    </div>
+    <div class="p-m-2 p-p-2">
+      <p-badge [value]="3"></p-badge>&nbsp;
+      <label class="p-field">Click to Download Translated Json Template:</label>
+      &nbsp;
+      <button class="p-button" (click)="downloadTranslatedCopy()">
+        <i class="pi pi-cloud-download"></i>&nbsp;Download
+      </button>
+    </div>
+  </div>
+</div>
+<!--
+<div id="app_playground_page">
+  <div>
+    <label> Choose language of Json template uploaded: </label>
+    <select id="sourceLanguage" [(ngModel)]="FromLanguage">
+      <option *ngFor="let srcLang of supportedLanguages" [value]="srcLang">
+        {{ srcLang }}
+      </option>
+    </select>
+  </div>
+  <div>
+    <label> Choose language of output Json</label>
+    <select id="destinationLanguage" [(ngModel)]="ToLanguage">
+      <option *ngFor="let toLang of supportedLanguages" [value]="toLang">
+        {{ toLang }}
+      </option>
+    </select>
+  </div>
+  <div>
+    <button (click)="downloadTranslatedCopy()">
+      Download Translation Copy (Json)
+    </button>
+  </div>
+</div>
+-->

@@ -1,0 +1,91 @@
+<div class="p-grid p-formgrid p-mt-4">
+  <div class="p-col-10 p-shadow-1 p-offset-1 section">
+    <div class="p-m-2 p-p-2">
+      <p-badge [value]="1"></p-badge>&nbsp;
+      <label class="p-field">Upload Source File:</label>
+      &nbsp;
+      <input
+        type="file"
+        id="sorce_upload"
+        #nativeFileUploadControl_source
+        [accept]="acceptSourceFileExt"
+      />
+    </div>
+    <div class="p-m-2 p-p-2">
+      <div class="info">
+        <i class="pi pi-info-circle"
+          ><label>&nbsp;Helpful Information</label></i
+        >
+      </div>
+      <p>
+        <b>Source File:</b> This file will have the content with every language
+        that needs to be read and then used for creating translated json files
+        as per the the choosen language in the next screen.
+      </p>
+      <p>
+        To downloand the template for uploading the source content. Click Below.
+      </p>
+      <i class="pi pi-cloud-download"></i>&nbsp;
+      <i class="pi pi-file-excel"></i>
+      <label class="downloadLink"
+        ><a href="http://localhost:3333/templates/Source Template.xlsx"
+          >Template Download</a
+        ></label
+      >
+      <p>For testing purpose download the test source file below and upload.</p>
+      <i class="pi pi-cloud-download"></i>&nbsp;
+      <i class="pi pi-file-excel"></i>
+      <label class="downloadLink"
+        ><a href="http://localhost:3333/templates/example template.xlsx"
+          >Test Source Copy</a
+        ></label
+      >
+    </div>
+    <div class="p-m-2 p-p-2">
+      <p-badge [value]="2"></p-badge>&nbsp;
+      <label class="p-field">Upload Json template:</label>
+      &nbsp;
+      <input
+        type="file"
+        id="json_upload"
+        #nativeFileUploadControl_template
+        [accept]="acceptTemplateFileExt"
+      />
+    </div>
+    <div class="p-m-2 p-p-2">
+      <div class="info">
+        <i class="pi pi-info-circle"
+          ><label>&nbsp;Helpful Information</label></i
+        >
+      </div>
+      <p>
+        <b>Json Template File:</b> This will be a valid json template which is
+        required as per your project configuration need. Upload the Json
+        template with key value pair. The value should be in one of the
+        languages from the source file which will be used for further
+        translation.
+      </p>
+      <p>
+        There is no fixed template of the Json file and can be of any form as
+        required by your project. The only requirement would be to upload a
+        valid Json file.
+      </p>
+      <p>For testing purpose download the test source file below and upload.</p>
+      <i class="pi pi-cloud-download"></i>&nbsp;
+      <i class="pi pi-file"></i>
+      <label class="downloadLink">
+        <a href="http://localhost:3333/templates/example template.json"
+          >Test Json Template Copy</a
+        ></label
+      >
+    </div>
+    <div class="p-m-2 p-p-2">
+      <p-badge [value]="3"></p-badge>&nbsp;
+      <label class="p-field">Upload To Start With Translation Process:</label>
+      &nbsp;
+      <button class="p-button" (click)="navigateToPlayground()">
+        <i class="pi pi-cloud-upload"></i>&nbsp; Upload Templates
+      </button>
+    </div>
+  </div>
+</div>

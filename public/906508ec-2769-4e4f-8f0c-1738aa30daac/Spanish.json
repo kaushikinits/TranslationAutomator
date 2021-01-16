@@ -1,0 +1,19 @@
+{
+    "welcome": "Hola Mundo",
+    "another": [
+        "La mejor de ambos mundos"
+    ],
+    "nextAnother": {
+        "info": "un zorro rápido salta la pared",
+        "another": [
+            "La mejor de ambos mundos"
+        ],
+        "child": {
+            "welcome": "Hola Mundo",
+            "nextChild": {
+                "welcomenext": "Happy go lucky__NO_MATCH_FOUND__"
+            }
+        }
+    },
+    "next": "Feliz, vaya suerte"
+}

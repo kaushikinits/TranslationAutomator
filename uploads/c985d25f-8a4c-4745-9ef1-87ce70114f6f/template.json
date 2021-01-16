@@ -1,0 +1,15 @@
+{
+    "welcome":"Hello World",
+    "another":["The best of both worlds"],
+    "nextAnother":{
+        "info":"a quick fox jumps the wall",
+        "another":["The best of both worlds"],
+        "child":{
+            "welcome":"Hello World",
+            "nextChild":{
+                "welcomenext":"Happy go lucky"
+            }
+        }
+    },
+    "next":"Happy go lucky"
+}

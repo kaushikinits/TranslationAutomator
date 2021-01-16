@@ -1,0 +1,19 @@
+{
+    "welcome": "你好，世界",
+    "another": [
+        "兩全其美的"
+    ],
+    "nextAnother": {
+        "info": "一隻狐狸跳牆",
+        "another": [
+            "兩全其美的"
+        ],
+        "child": {
+            "welcome": "你好，世界",
+            "nextChild": {
+                "welcomenext": "快樂去幸運"
+            }
+        }
+    },
+    "next": "快樂去幸運"
+}

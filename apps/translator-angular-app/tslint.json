@@ -1,0 +1,10 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [true, "attribute", "translationApp", "camelCase"],
+    "component-selector": [true, "element", "translation-app", "kebab-case"]
+  },
+  "linterOptions": {
+    "exclude": ["!**/*"]
+  }
+}
